@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ceiling Design | Distinctive Interior & Exterior Decor</title>
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* === UNCHANGED SITE STYLES === */
+:root {
+  --bg-dark: #0f0f0f;
+  --text-light: #ffffff;
+  --text-muted: #cfcfcf;
+  --accent: #ff9f1c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15,15,15,0.85);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+header img { height: 50px; }
+
+/* NAV */
+nav { display: flex; }
+
+nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--text-light);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after { width: 100%; }
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: #fff;
+}
+
+/* SERVICES PANEL */
+#servicesPanel {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background: rgba(15,15,15,0.96);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  z-index: 999;
+}
+
+.services-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-inner a {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.services-inner a:hover { color: var(--accent); }
+
+/* MOBILE */
+@media (max-width: 900px) {
+  header { padding: 0 24px; }
+
+  nav {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: rgba(15,15,15,0.98);
+    flex-direction: column;
+    display: none;
+    padding: 30px;
+  }
+
+  nav.open { display: flex; }
+  nav a { margin: 20px 0; }
+  .hamburger { display: flex; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="../images/companyicon.png" alt="Logo">
+
+  <nav id="mainNav">
+    <a href="../index.html">Home</a>
+    <a href="#" id="servicesToggle">Services</a>
+    <a href="../about.html">About</a>
+    <a href="../collections.html">Collections</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- SERVICES DROPDOWN -->
+<div id="servicesPanel">
+  <div class="services-inner">
+    <a href="service-painting.html">Painting & Decorating</a>
+    <a href="service-drywall.html">Drywall Design</a>
+    <a href="service-ceiling.html">Ceiling Design</a>
+    <a href="service-media-walls.html">Media Walls</a>
+    <a href="service-tiling.html">Tiling</a>
+    <a href="service-flooring.html">Flooring</a>
+  </div>
+</div>
+
+<!-- ===== CEILING DESIGN CONTENT ===== -->
+
+<section style="
+  background:#1b1b1b;
+  padding:160px 60px 120px;
+  text-align:center;
+">
+
+  <div style="max-width:900px;margin:0 auto;">
+    <h1 style="font-size:42px;margin-bottom:30px;">
+      Bespoke Ceiling Design
+    </h1>
+
+    <p style="color:#e0e0e0;line-height:1.7;margin-bottom:20px;">
+      Our <strong>Ceiling Design services</strong> transform overlooked spaces into
+      refined architectural features that enhance light, depth, and character.
+    </p>
+
+    <p style="color:#e0e0e0;line-height:1.7;">
+      From modern minimalist finishes to detailed statement ceilings,
+      every design is tailored to complement your interior.
+    </p>
+  </div>
+</section>
+
+<section style="background:#ffffff;padding:120px 60px;">
+  <div style="
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    gap:80px;
+    align-items:center;
+    flex-wrap:wrap;
+  ">
+
+    <div style="flex:1;min-width:300px;color:#111;">
+      <h2 style="font-size:36px;margin-bottom:25px;">
+        Feature & Architectural Ceilings
+      </h2>
+
+      <p style="line-height:1.8;margin-bottom:20px;">
+        We design and install a wide range of ceiling solutions including
+        coffered ceilings, dropped ceilings, shadow gaps, bulkheads,
+        and integrated LED lighting features.
+      </p>
+
+      <p style="line-height:1.8;margin-bottom:20px;">
+        Careful planning and precision installation ensure perfect symmetry,
+        crisp lines, and seamless integration with lighting and finishes.
+      </p>
+
+      <p style="line-height:1.8;">
+        Whether enhancing a living space or creating a dramatic focal point,
+        our ceiling designs add depth, elegance, and architectural value.
+      </p>
+    </div>
+
+    <div style="flex:1;min-width:300px;">
+      <img src="../images/ceiling-design-example.jpg" style="width:100%;display:block;">
+    </div>
+
+  </div>
+</section>
+
+<!-- GSAP (UNCHANGED) -->
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+
+<script>
+const servicesToggle = document.getElementById('servicesToggle');
+const servicesPanel = document.getElementById('servicesPanel');
+const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('mainNav');
+
+let open = false;
+gsap.set(servicesPanel, { height: 0 });
+
+servicesToggle.addEventListener('click', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+
+  gsap.to(servicesPanel, {
+    height: open ? 0 : servicesPanel.scrollHeight,
+    duration: 0.5,
+    ease: 'power3.out'
+  });
+
+  open = !open;
+});
+
+document.addEventListener('click', (e) => {
+  if (open && !servicesPanel.contains(e.target) && !servicesToggle.contains(e.target)) {
+    gsap.to(servicesPanel, { height: 0, duration: 0.4 });
+    open = false;
+  }
+});
+
+window.addEventListener('scroll', () => {
+  if (open) {
+    gsap.to(servicesPanel, { height: 0, duration: 0.3 });
+    open = false;
+  }
+});
+
+hamburger.addEventListener('click', (e) => {
+  e.stopPropagation();
+  nav.classList.toggle('open');
+});
+</script>
+
+</body>
+</html>
