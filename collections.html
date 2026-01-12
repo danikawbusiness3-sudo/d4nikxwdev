@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Collections | Distinctive Interior & Exterior Decor</title>
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* === UNCHANGED SITE STYLES === */
+:root {
+  --bg-dark: #0f0f0f;
+  --text-light: #ffffff;
+  --text-muted: #cfcfcf;
+  --accent: #ff9f1c;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15,15,15,0.85);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+header img { height: 50px; }
+
+/* NAV */
+nav { display: flex; }
+
+nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--text-light);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after { width: 100%; }
+
+/* SERVICES PANEL */
+#servicesPanel {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background: rgba(15,15,15,0.96);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  z-index: 999;
+}
+
+.services-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-inner a {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.services-inner a:hover { color: var(--accent); }
+
+/* CONTENT */
+.about {
+  max-width: 900px;
+  margin: 160px auto 60px;
+  padding: 0 60px;
+}
+
+.about h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.about p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="images/companyicon.png" alt="Logo">
+  <nav id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="#" id="servicesToggle">Services</a>
+    <a href="about.html">About</a>
+    <a href="collections.html">Collections</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div id="servicesPanel">
+  <div class="services-inner">
+    <a href="services/service-painting.html">Painting & Decorating</a>
+    <a href="services/service-drywall.html">Drywall Design</a>
+    <a href="services/service-ceiling.html">Ceiling Design</a>
+    <a href="services/service-media-walls.html">Media Walls</a>
+    <a href="services/service-tiling.html">Tiling</a>
+    <a href="services/service-flooring.html">Flooring</a>
+  </div>
+</div>
+
+<section class="about">
+  <h1>Our Interior Collections</h1>
+  <p>Our collections present a curated selection of interior design projects.</p>
+</section>
+
+<!-- TEMPLATE SECTION (USED FOR ALL) -->
+<!-- ONLY ADDITIONS: hidden gallery + button -->
+
+<section style="max-width:1200px;margin:80px auto 120px;padding:0 60px;">
+<h2 style="font-size:36px;margin-bottom:40px;">DryWall Designs</h2>
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+<img src="drywall/drywall1.jpg" style="width:100%;">
+<img src="drywall/drywall2.jpg" style="width:100%;">
+<img src="drywall/drywall3.jpg" style="width:100%;">
+<img src="drywall/drywall4.jpg" style="width:100%;">
+<img src="drywall/drywall5.jpg" style="width:100%;">
+<img src="drywall/drywall6.jpg" style="width:100%;">
+<img src="drywall/drywall7.jpg" style="width:100%;">
+<img src="drywall/drywall8.jpg" style="width:100%;">
+</div>
+
+<div class="more-gallery" style="display:none;margin-top:20px;">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+<img src="drywall/drywall9.jpg" style="width:100%;">
+<img src="drywall/drywall10.jpg" style="width:100%;">
+<img src="drywall/drywall11.jpg" style="width:100%;">
+<img src="drywall/drywall12.jpg" style="width:100%;">
+</div>
+</div>
+
+<button class="see-more" style="margin-top:30px;padding:10px 20px;border:1px solid #fff;background:transparent;color:#fff;">
+SEE MORE
+</button>
+</section>
+
+<section style="max-width:1200px;margin:80px auto 120px;padding:0 60px;">
+<h2 style="font-size:36px;margin-bottom:40px;">DryWall Ceiling Designs</h2>
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+<img src="images/media1.jpg" style="width:100%;">
+<img src="images/media2.jpg" style="width:100%;">
+<img src="images/media3.jpg" style="width:100%;">
+<img src="images/media4.jpg" style="width:100%;">
+<img src="images/media5.jpg" style="width:100%;">
+<img src="images/media6.jpg" style="width:100%;">
+<img src="images/media7.jpg" style="width:100%;">
+<img src="images/media8.jpg" style="width:100%;">
+</div>
+
+<div class="more-gallery" style="display:none;margin-top:20px;">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+<img src="images/media9.jpg" style="width:100%;">
+<img src="images/media10.jpg" style="width:100%;">
+<img src="images/media11.jpg" style="width:100%;">
+<img src="images/media12.jpg" style="width:100%;">
+</div>
+</div>
+
+<button class="see-more" style="margin-top:30px;padding:10px 20px;border:1px solid #fff;background:transparent;color:#fff;">
+SEE MORE
+</button>
+</section>
+
+<section style="max-width:1200px;margin:80px auto 120px;padding:0 60px;">
+<h2 style="font-size:36px;margin-bottom:40px;">MediaWall Designs</h2>
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+<img src="images/media1.jpg" style="width:100%;">
+<img src="images/media2.jpg" style="width:100%;">
+<img src="images/media3.jpg" style="width:100%;">
+<img src="images/media4.jpg" style="width:100%;">
+<img src="images/media5.jpg" style="width:100%;">
+<img src="images/media6.jpg" style="width:100%;">
+<img src="images/media7.jpg" style="width:100%;">
+<img src="images/media8.jpg" style="width:100%;">
+</div>
+
+<div class="more-gallery" style="display:none;margin-top:20px;">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+<img src="images/media9.jpg" style="width:100%;">
+<img src="images/media10.jpg" style="width:100%;">
+<img src="images/media11.jpg" style="width:100%;">
+<img src="images/media12.jpg" style="width:100%;">
+</div>
+</div>
+
+<button class="see-more" style="margin-top:30px;padding:10px 20px;border:1px solid #fff;background:transparent;color:#fff;">
+SEE MORE
+</button>
+</section>
+
+<section style="max-width:1200px;margin:80px auto 120px;padding:0 60px;">
+<h2 style="font-size:36px;margin-bottom:40px;">Painting & Decorating</h2>
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+<img src="images/media1.jpg" style="width:100%;">
+<img src="images/media2.jpg" style="width:100%;">
+<img src="images/media3.jpg" style="width:100%;">
+<img src="images/media4.jpg" style="width:100%;">
+<img src="images/media5.jpg" style="width:100%;">
+<img src="images/media6.jpg" style="width:100%;">
+<img src="images/media7.jpg" style="width:100%;">
+<img src="images/media8.jpg" style="width:100%;">
+</div>
+
+<div class="more-gallery" style="display:none;margin-top:20px;">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+<img src="images/media9.jpg" style="width:100%;">
+<img src="images/media10.jpg" style="width:100%;">
+<img src="images/media11.jpg" style="width:100%;">
+<img src="images/media12.jpg" style="width:100%;">
+</div>
+</div>
+
+<button class="see-more" style="margin-top:30px;padding:10px 20px;border:1px solid #fff;background:transparent;color:#fff;">
+SEE MORE
+</button>
+</section>
+
+<section style="max-width:1200px;margin:80px auto 120px;padding:0 60px;">
+<h2 style="font-size:36px;margin-bottom:40px;">Tiling</h2>
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+<img src="images/media1.jpg" style="width:100%;">
+<img src="images/media2.jpg" style="width:100%;">
+<img src="images/media3.jpg" style="width:100%;">
+<img src="images/media4.jpg" style="width:100%;">
+<img src="images/media5.jpg" style="width:100%;">
+<img src="images/media6.jpg" style="width:100%;">
+<img src="images/media7.jpg" style="width:100%;">
+<img src="images/media8.jpg" style="width:100%;">
+</div>
+
+<div class="more-gallery" style="display:none;margin-top:20px;">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+<img src="images/media9.jpg" style="width:100%;">
+<img src="images/media10.jpg" style="width:100%;">
+<img src="images/media11.jpg" style="width:100%;">
+<img src="images/media12.jpg" style="width:100%;">
+</div>
+</div>
+
+<button class="see-more" style="margin-top:30px;padding:10px 20px;border:1px solid #fff;background:transparent;color:#fff;">
+SEE MORE
+</button>
+</section>
+
+<section style="max-width:1200px;margin:80px auto 120px;padding:0 60px;">
+<h2 style="font-size:36px;margin-bottom:40px;">Flooring (Laminate, Vinyl, Wooden )</h2>
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+<img src="images/media1.jpg" style="width:100%;">
+<img src="images/media2.jpg" style="width:100%;">
+<img src="images/media3.jpg" style="width:100%;">
+<img src="images/media4.jpg" style="width:100%;">
+<img src="images/media5.jpg" style="width:100%;">
+<img src="images/media6.jpg" style="width:100%;">
+<img src="images/media7.jpg" style="width:100%;">
+<img src="images/media8.jpg" style="width:100%;">
+</div>
+
+<div class="more-gallery" style="display:none;margin-top:20px;">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+<img src="images/media9.jpg" style="width:100%;">
+<img src="images/media10.jpg" style="width:100%;">
+<img src="images/media11.jpg" style="width:100%;">
+<img src="images/media12.jpg" style="width:100%;">
+</div>
+</div>
+
+<button class="see-more" style="margin-top:30px;padding:10px 20px;border:1px solid #fff;background:transparent;color:#fff;">
+SEE MORE
+</button>
+</section>
+
+<!-- SAME STRUCTURE APPLIES TO ALL OTHER SECTIONS (unchanged images, just duplicated safely) -->
+
+<script>
+document.querySelectorAll('.see-more').forEach(button => {
+  button.addEventListener('click', () => {
+    const gallery = button.previousElementSibling;
+    const open = gallery.style.display === 'block';
+
+    gallery.style.display = open ? 'none' : 'block';
+    button.textContent = open ? 'SEE MORE' : 'SEE LESS';
+  });
+});
+</script>
+
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script>
+const servicesToggle = document.getElementById('servicesToggle');
+const servicesPanel = document.getElementById('servicesPanel');
+let open = false;
+gsap.set(servicesPanel, { height: 0 });
+
+servicesToggle.addEventListener('click', e => {
+  e.preventDefault();
+  gsap.to(servicesPanel, { height: open ? 0 : servicesPanel.scrollHeight });
+  open = !open;
+});
+</script>
+
+</body>
+</html>
